@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">weddingproject</string>
+    <string name="RegisterTitle">Register</string>
+    <string name="RegisterUsernameTV">Please enter a Username</string>
+    <string name="RegisterUsernameHintTV"> Enter User Name</string>
+    <string name="RegisterPasswordTV">Please enter a password</string>
+    <string name="RegisterPasswordHintTV">password</string>
+    <string name="RegisterShowPassCharsTV">Show password characters</string>
+    <string name="ProfileNameTV">name</string>
+    <string name="ProfileAddressTV">adress</string>
+    <string name="ProfileEmailTV">email</string>
+    <string name="ProfileRentBuyTV">rent/buy</string>
+    <string name="ProfileRentalPricePDTV">price</string>
+    <string name="ProfileTitleTV">Profile</string>
+    <string name="ProfileNameHint">enter your name here</string>
+    <string name="ProfileAddressHint">enter your adress</string>
+    <string name="ProfileEmailHintTV">enter your e-mail adress</string>
+</resources>

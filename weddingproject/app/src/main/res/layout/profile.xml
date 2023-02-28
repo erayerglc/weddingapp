@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/arkaplan2">
+
+    <TableLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout"
+        android:paddingTop="25dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@+id/ProfileTV"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+        <TableRow >
+            <TextView android:text="@string/ProfileNameTV"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/Name"
+                android:textStyle="bold|italic"
+                android:paddingTop="20dp"
+                android:paddingLeft="5dp"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow >
+            <TextView android:text="@string/ProfileAddressTV"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/Address"
+                android:textStyle="bold|italic"
+                android:textSize="20sp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="40dp"
+                android:layout_marginTop="20dp"/>
+        </TableRow>
+        <TableRow >
+            <TextView android:text="@string/ProfileEmailTV"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/Email"
+                android:textStyle="bold|italic"
+                android:textSize="20sp"
+                android:paddingLeft="10dp" />
+        </TableRow>
+        <TableRow >
+            <TextView android:text="@string/ProfileRentBuyTV"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/RentBuy"
+                android:textStyle="bold|italic"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp" />
+        </TableRow>
+
+        <TableRow >
+            <TextView android:text="@string/ProfileRentalPricePDTV"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/RentalPrice"
+                android:textStyle="bold|italic"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"/>
+        </TableRow>
+
+        <TableRow >
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ProfileTitleTV"
+        android:id="@+id/ProfileTV"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"
+        android:paddingTop="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/ProfileNameHint"
+        android:ems="10"
+        android:id="@+id/nameET"
+        android:layout_below="@+id/ProfileTV"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="46dp"
+        android:textStyle="italic"
+        android:layout_marginRight="5dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/addressET"
+        android:layout_below="@+id/nameET"
+        android:layout_alignStart="@+id/nameET"
+        android:hint="@string/ProfileAddressHint"
+        android:layout_marginRight="5dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailET"
+        android:layout_below="@+id/addressET"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/ProfileEmailHintTV"
+        android:layout_marginRight="5dp"
+        />
+
+    <Spinner
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/rentBuySpinner"
+        android:paddingTop="15dp"
+        android:layout_below="@+id/emailET"
+        android:layout_alignRight="@+id/emailET"
+        android:layout_alignEnd="@+id/emailET"
+        android:layout_marginTop="5dp"/>
+
+
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:id="@+id/rentalPriceET"
+        android:hint="€____"
+        android:layout_above="@+id/changeBackground"
+        android:layout_alignRight="@+id/rentBuySpinner"
+        android:layout_alignEnd="@+id/rentBuySpinner"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Submit Profile"
+        android:id="@+id/createDatabase"
+        android:textStyle="bold|italic"
+        android:clickable="true"
+        android:textColor="#E0ECEC"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/ProfileTV"
+        android:layout_marginBottom="43dp"/>
+
+    <Spinner
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/changeBackgroundSpinner"
+        android:layout_below="@+id/rentalPriceET"
+        android:layout_alignRight="@+id/rentalPriceET"
+        android:layout_alignEnd="@+id/rentalPriceET" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Choose a background colour"
+        android:id="@+id/changeBackground"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="60dp"
+        android:textSize="15sp"
+        android:paddingTop="13dp"
+        android:paddingLeft="10dp" />
+
+
+</RelativeLayout>
